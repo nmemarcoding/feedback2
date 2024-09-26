@@ -1,0 +1,227 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.brand-name {
+    font-size: 24px;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Feedback Section */
+.feedback-section {
+    padding: 50px 0;
+}
+
+.feedback-section h1 {
+    text-align: center;
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+.feedback-section p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.feedback-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form .form-group {
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.feedback-form label span {
+    color: red;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e65c00;
+}
+
+/* Reviews Section */
+.reviews-section {
+    margin-top: 60px;
+}
+
+.reviews-section h2 {
+    text-align: center;
+    color: #ff6600;
+    margin-bottom: 30px;
+}
+
+.reviews-container {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.review-text {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.review-author {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .social-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer .social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .social-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .social-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .feedback-form {
+        padding: 20px;
+    }
+
+    .submit-button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback-section h1 {
+        font-size: 24px;
+    }
+
+    .feedback-section p {
+        font-size: 16px;
+    }
+}
